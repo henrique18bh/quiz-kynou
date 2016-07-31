@@ -1,0 +1,13 @@
+<template name="quiz">
+    <div class="quiz well well-lg" data-id="{{ _id }}">
+
+        <h3>{{ pergunta }}</h3>
+
+        {{ #each indexedArray alternativas }}
+        <a href="#" class="voto btn btn-primary btn-block" data-id="{{ _index }}">
+            <span class="votos pull-right">{{ votos }}</span>
+            <span class="text">{{ texto }}</span>
+        </a>
+        {{ /each }}
+    </div>
+</template>
