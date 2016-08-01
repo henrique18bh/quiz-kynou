@@ -1,4 +1,4 @@
-Template.body.helpers({
+Template.body.helpers({ 
     quizes: function () {
         return Quiz.find();
     }
